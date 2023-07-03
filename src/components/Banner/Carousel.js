@@ -50,13 +50,13 @@ const Carousel = () => {
           height="80"
           style={{ marginBottom: 10 }}
         />
-        <span style={{ fontSize: 20 }}>
+        <span style={{ fontSize: 18 }}>
           {coin?.symbol}
           &nbsp;
           <span
             style={{
               color: profit > 0 ? "rgb(14, 203, 129)" : "red",
-              fontSize: 20,
+              fontSize: 17,
               fontWeight: 500,
             }}
           >

@@ -14,7 +14,7 @@ import { CryptoState } from "../CryptoContext";
 
 const useStyles = {
   flex: 1,
-  color: "gold",
+  color: "#FF7F50",
   fontFamily: "Montserrat",
   fontWeight: "bold",
   cursor: "pointer",
@@ -28,10 +28,10 @@ const Header = () => {
 
   const darkTheme = createTheme({
     palette: {
-      primary: { main: "#fff" },
+      primary: { main: "#800080" },
       type: "dark",
       text: {
-        primary: "#fff",
+        primary: "#800080",
       },
     },
   });
@@ -54,17 +54,18 @@ const Header = () => {
                 width: 100,
                 height: 40,
                 marginRight: 15,
-                color: "black",
-                backgroundColor: "white",
-                border: "6px solid gold",
+                color: "#FF7F50",
+                fontSize: "15px",
+                backgroundColor: "#14161a",
+                border: "1px solid #800080",
               }}
               value={currency} // Set the initial value here
               onChange={(e) => setCurrency(e.target.value)}
             >
-              <MenuItem value={"INR"} style={{ color: "black" }}>
+              <MenuItem value={"INR"} style={{ color: "#FF7F50" }}>
                 INR
               </MenuItem>
-              <MenuItem value={"USD"} style={{ color: "black" }}>
+              <MenuItem value={"USD"} style={{ color: "#FF7F50" }}>
                 USD
               </MenuItem>
             </Select>
