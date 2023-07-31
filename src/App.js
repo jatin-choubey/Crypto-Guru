@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import "./App.css";
 
 const useStyles = {
-  backgroundColor: "#14161a",
+  backgroundColor: "#2A2F4F",
   color: "white",
   minHeight: "100vh",
 };

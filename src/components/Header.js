@@ -56,8 +56,8 @@ const Header = () => {
                 marginRight: 15,
                 color: "#FF7F50",
                 fontSize: "15px",
-                backgroundColor: "#14161a",
-                border: "1px solid #800080",
+                backgroundColor: "#2A2F4F",
+                border: "2px solid #800080",
               }}
               value={currency} // Set the initial value here
               onChange={(e) => setCurrency(e.target.value)}

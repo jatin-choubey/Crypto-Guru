@@ -4,6 +4,7 @@ import Carousel from "./Carousel";
 const bannerStyles = {
   banner: {
     backgroundImage: "url(./banner2.jpg)",
+    backgroundSize: "cover",
   },
   bannerContent: {
     height: "40%",
@@ -34,7 +35,7 @@ function Banner() {
               fontFamily: "Montserrat",
             }}
           >
-            Crypto Guru 🧘‍♂️
+            Crypto Guru
           </Typography>
           <Typography
             variant="subtitle1"
@@ -42,6 +43,7 @@ function Banner() {
               color: "lightgray",
               textTransform: "capitalize",
               fontFamily: "Montserrat",
+              fontSize: "20px",
             }}
           >
             Unlock the Secrets of the Crypto World and become a{" "}

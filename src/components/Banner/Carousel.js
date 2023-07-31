@@ -39,8 +39,8 @@ const Carousel = () => {
   useEffect(() => {
     fetchTrendingCoins();
   }, [currency]);
-
   const items = trending.map((coin) => {
+    console.log("DATAAA", coin);
     let profit = coin.price_change_percentage_24h >= 0;
     return (
       <Link style={carouselStyles.carouselItem} to={`/coins/${coin.id}`}>
@@ -80,16 +80,28 @@ const Carousel = () => {
   };
 
   return (
-    <div style={carouselStyles.carousel}>
-      <AliceCarousel
-        mouseTracking
-        infinite
-        autoPlayInterval={1500}
-        disableDotsControls
-        responsive={responsive}
-        autoPlay
-        items={items}
-      ></AliceCarousel>
+    <div>
+      <h2
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginBottom: "20px",
+        }}
+      >
+        Trending Coins
+      </h2>
+
+      <div>
+        <AliceCarousel
+          mouseTracking
+          infinite
+          autoPlayInterval={1500}
+          disableDotsControls
+          responsive={responsive}
+          autoPlay
+          items={items}
+        ></AliceCarousel>
+      </div>
     </div>
   );
 };
