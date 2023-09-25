@@ -95,7 +95,7 @@ const CoinsTablee = () => {
           variant="outlined"
           InputLabelProps={{
             style: {
-              color: "#FF7F50", // Coral
+              color: "white", // Coral
             },
           }}
           onChange={(e) => setSearch(e.target.value)}
